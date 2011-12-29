@@ -1,0 +1,65 @@
+Development
+1.0.5
+    Try to prevent mplayer from going into infinite loop on corrupt qt files
+    Fix missing type includes
+    Fix missing install file
+    Fix compilation on RHEL 5.7, due to older GLIB2
+1.0.5b2
+    Fix seeking in the media_tracker when the mouse button is released
+    Activate the external subtitle file, when we load one
+    Translated the missing string into Polish
+    Add hot key D to toggle deinterlacing
+    Updated German translation
+    Translated the "No Data" string into Polish
+    Use the proper domain when requesting a translated string, by default the lib was using the gnome-mplayer domain
+        rather than the gmtk domain, so strings were being read from the wrong set of files
+    Made the string "No Data" translatable, updated po files
+    Updated Japanese translation
+    Fix another potential segfault in gmtk_media_player when defining a specific font
+    When passing in 1.0 to ATTRIBUTE_SPEED_MULTIPLIER, reset the speed to normal
+    Added double attribute set for ATTRIBUTE_SPEED_SET
+    Fix potential segfault in gmtk_media_player when defining a specific font
+1.0.5b1
+    Change COPYING to contain correct license file GPL v2 instead of GPL v3 (code was never v3)
+    Updated Polish translation
+    Fix problem with seeking in the tracker
+    When mplayer reports that it has video, resize the media window so that mplayer has something to draw to
+	Fix issue with not being able to play media off an SFTP file share
+    Fix Issue #560, ATTRIBUTE_FORCE_CACHE not being processed
+    Bump version to 1.0.5b1
+    Add in gmtk_version method
+    Switch from AM_MAINTAINER_MODE to AM_MAINTAINER_MODE([enable]) in configure.ac
+    Wait for the socket_id to be valid, but in plugin mode it may not so timeout
+    Convert ignored key code to descriptive name
+    Have CD Audio use the cache
+    Added recommended options from Issue #549
+    Update po files
+    Update French translation
+    Fix Issue #546 so that it only trys again when XVMC is the selected VO
+    Disable XVMC fallback as it does not work in all cases, fixes Issue #546
+    Capture keys x/z to alter subtitle delay
+    Remove runtime warning when player->vo = NULL
+    Add preferred audio and subtitle language attributes
+    Detect win32 in configure
+    Add g_strv_new to gm_strfuncs
+    Copy gmtk_common.h to includes
+    Cleaned up tabs from RPM spec.in
+    Cleaned up the RPM spec.in
+    Updated Portuguese translation, and others
+    Clean up some compiler warnings when building the rpm
+    Add translations to the spec file
+    Import translations from gnome-mplayer
+    Fix some problems with initial audio language selection when using mplayer2
+    Have mplayer use gl_nosw when hardware codecs are enabled, when vo is gl or gl2
+    Fix feature enabling in gm_pref_store, it was always defaulting to the keystore
+    Add in better support for hardware codecs based on comments from Uoti
+    Add in .spec.in file to allow proper RPM package creation
+    Need to start doing po translations, I'll see what I can steal from the other components
+    Bump version to 1.0.4
+    Cleanup some cache files, fix gtk3 check error on installs without gtk3
+    Add configure flags --enable-keystore, --enable-gsettings, --enable-gconf to make prefstore backend selectable
+    Have configure autodetect gtk3
+    Apply patch from gnome-mplayer changes (SVN r2152 - r2148)
+    Make code work
+    Initial import of code
+
