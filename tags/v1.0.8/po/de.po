@@ -1,0 +1,111 @@
+# GNOME MPlayer
+# Copyright (C) 2007 Kevin DeKorte
+# This file is distributed under the same license as the GNOME MPlayer package.
+# Kevin DeKorte <kdekorte@gmail.com> 2007.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-02 16:16-0700\n"
+"PO-Revision-Date: 2012-01-10 21:55+0000\n"
+"Last-Translator: Dominik Dehning <Unknown>\n"
+"Language-Team: tim__b <timbuening@uni-muenster.de>, Wolfgang Knauf <his-"
+"metality@freenet.de>, MixCool <lars.thoms@mixcool.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2011-06-09 16:08+0000\n"
+"X-Generator: Launchpad (build 13175)\n"
+
+#: ../src/gm_audio.c:80 ../src/gm_audio.c:266
+#: ../src/gmtk_output_combo_box.c:150
+msgid "Default"
+msgstr "Standard"
+
+#: ../src/gmtk_media_player.c:745 ../src/gmtk_media_player.c:1123
+msgid "Frame Dropping"
+msgstr "Einzelbilder verwerfen"
+
+#: ../src/gmtk_media_player.c:759
+msgid "Deinterlace"
+msgstr ""
+
+#: ../src/gmtk_media_player.c:1013
+msgid "Loading..."
+msgstr "Ladevorgang läuft ..."
+
+#: ../src/gmtk_media_player.c:1151
+msgid "Subtitles Visible"
+msgstr "Untertitel sichtbar"
+
+#: ../src/gmtk_media_player.c:1154
+msgid "Subtitles Hidden"
+msgstr "Untertitel ausgeblendet"
+
+#: ../src/gmtk_media_player.c:3051
+#, c-format
+msgid "Failed to open %s"
+msgstr "Öffnen von %s fehlgeschlagen"
+
+#: ../src/gmtk_media_player.c:3093
+msgid "Compressed SWF format not supported"
+msgstr "Komprimiertes SWF-Format wird nicht unterstützt"
+
+#: ../src/gmtk_media_player.c:3198
+#, c-format
+msgid "Cache fill: %2.2f%%"
+msgstr "Zwischenspeichernutzung: %2.2f%%"
+
+#: ../src/gmtk_media_player.c:3364 ../src/gmtk_media_player.c:3365
+#: ../src/gmtk_media_player.c:3414 ../src/gmtk_media_player.c:3446
+#: ../src/gmtk_media_player.c:3447 ../src/gmtk_media_player.c:3479
+#: ../src/gmtk_media_player.c:3511
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: ../src/gmtk_media_player.c:3425
+#, c-format
+msgid "External Subtitle #%i"
+msgstr "Externer Untertitel #%i"
+
+#: ../src/gmtk_media_player.c:3618
+#, c-format
+msgid "Screenshot saved to '%s'"
+msgstr "Schnappschuss in '%s' gespeichert"
+
+#: ../src/gmtk_media_player.c:3621 ../src/gmtk_media_player.c:3631
+#: ../src/gmtk_media_player.c:3730
+msgid "GNOME MPlayer Notification"
+msgstr "GNOME MPlayer Benachrichtigung"
+
+#: ../src/gmtk_media_player.c:3630
+#, fuzzy
+msgid "Failed to take screenshot"
+msgstr "Öffnen von %s fehlgeschlagen"
+
+#: ../src/gmtk_media_player.c:3727
+msgid "MPlayer should be Upgraded to a Newer Version"
+msgstr "MPlayer sollte auf eine neue Version aktualisiert werden"
+
+#: ../src/gmtk_media_player.c:3990
+#, fuzzy
+msgid "You might want to consider upgrading mplayer to a newer version"
+msgstr ""
+"Sie sollten in Betracht ziehen, MPlayer auf eine neuere Version zu "
+"aktualisieren\n"
+
+#: ../src/gmtk_media_tracker.c:102 ../src/gmtk_media_tracker.c:106
+#: ../src/gmtk_media_tracker.c:216
+msgid "No Information"
+msgstr "Keine Informationen"
+
+#: ../src/gmtk_audio_meter.c:215
+msgid "No Data"
+msgstr "Keine Daten"
+
+#~ msgid "GNOME MPlayer Error"
+#~ msgstr "GNOME MPlayer Fehler"
