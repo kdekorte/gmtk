@@ -1,0 +1,186 @@
+Development
+1.0.9
+    Don't force a minimum size on the tracker
+1.0.9b
+    Only do the media player allocation event if no video is present
+    Fix parameter warning to gtk_widget_get_visible
+    Add backend variable to gmtk.pc
+    Run autoreconf
+    Updated Hungarian translation
+    Updated Polish translation
+    Updated Portuguese translation
+    Add key bindings for h tv_step_channel down and k tv_step_channel up
+1.0.9a
+    Only emit size_allocation when the widget is visible
+    Fix bug where title was getting reset when genre was found
+    Fix gnome-mplayer Issue 683 more granular
+	gmtk_media_player - fix OSD messages so they only displayed for level 1 and higher
+    gmtk_media_player - exclude input.conf from file not found message
+    Use case inspecific parsing of metadata attributes fixes issue #13
+1.0.8
+    Updated Spanish translation
+    Updated Japanese translation
+    Rework initial subtitle visibility setting
+1.0.8b
+    Updated Korean translation	
+    Run make update-po
+    Add message when screenshot capture fails
+    Switch to GLIB for GMLIB header files, since GTK is not included
+    Switch to GTK VERSION tags when possible
+    Updated Japanese translation
+    Fix compliation of gmtk_media_tracker in generic application
+    Run make update-po
+    Remove audio export filter when codec cannot use it
+    Remove cairo variable from gmtk_media_player
+    Version bump to 1.0.8a
+    Use cairo and the draw event to draw the background in GTK3
+    Set background color in gmtk_media_player widget using specific realize events
+    Address parallel build problem from Issue #11
+1.0.7
+    Rerun autoreconf -fiv
+1.0.7b
+    Make 'o' toggle the OSD in gmtk_media_player
+    Update makefile so that libgmtk is dependent on libgmlib so that parallel builds work
+    Updated Polish translation
+    Add anamorphic aspect ratio (2.39:1)
+    Fix problem with audio only file restarts in gmtk_media_player gnome-mplayer Issue #634
+    Clean up double setting of media_device in gmtk_media_player
+    Add subtitle step forward and backward commands
+    Basic scrolling wheel patch from Gnome Mplayer Issue #621
+    Don't flush events when querying devices
+    Cleanup GTK depreciated warnings in gmtk_media_tracker
+    Cleanup gtk_widget_get_pointer depreciated warning on GTK 3.4
+    Version the libraries that are built
+    Change error message dialog in thread_reader_error to event that is raised, let the front end handle it
+    add gm_bool_to_string() macro (use like a function returning const gchar*)
+    Clear artist, title and album on media end, prevents wrong cover art lookup
+    Change gmtk_media_player_log_state log level from DEBUG to INFO
+    Move and add gmtk_media_player_log_state status messages around
+    Prevent class cast on possible NULL pointer
+    Emit mplayer_complete_cond anytime we find an error reading from the mplayer thread
+    new function gm_log_name_this_thread(): improves thread logging
+    Fix usage of status in thread_reader_error correctly
+    Clean up the pointer math in gmtk_media_player_log_state
+    Clean up some memory allocations identified by valgrind
+    Print thread number with all debug messages if GM_DEBUG_THREADS is set
+    Change strchr to g_strrstr in gm_log
+    Uppercase constant GMPLS_LEN
+    Define the player_lock mutex
+    Fix a double free at program exit time (removes an occasional segfault)
+    Initialize a struct to 0 to remove "branch depends on uninitialized memory" error
+    Fix "pointer to object on stack passed out of function" bug.
+    Add a function attribute, so calls to gm_log() are checked for printf format string errors 
+    Hook gm_log functions into the remainder of the sources
+    Hook functions from gm_log into the main gmtk_media_player class, add log_state method
+    Make gm_log.c/,h compatible with indent
+    Fix compile error in gm_log
+    Adjust formatting in gm_log files to match up with rest of project
+    Add in gm_log from Hans Ecke
+    Return a NULL instead of a "" string for metadata
+    Apply patch from Issue #9 to fix some cppcheck warnings
+    Fix a couple of keyboard shortcuts as they were in the wrong shift state, similar to gnome-mplayer fix
+    Initialize some media metadata
+    Change some minor video initialization setup steps
+    Implement getting ATTRIBUTE_SPEED_SET
+    Fix problem with removal of read metadata and replacing it with filename info
+    Fix compiler warning detected by clang
+    Monitor sub visiblity better gnome-mplayer Issue #615
+    Protect against possible divide by zero in gmtk_media_player_size_allocate
+    Correct situation where media player window allocation is small or incorrect
+	If mplayer emits a signal at position 0 retry once
+	Fix logic error in ERROR_RETRY
+    Replace g_strncasecmp with g_ascii_strncasecmp
+1.0.6
+    Set black background color for all GTK States on media widget
+    Assign NULL to freed strings
+    Updated Japanese translation
+    Remove debug message
+    Kill GTK widget oversize warning
+    Apply recommendation from Issue #6
+    Apply patch from Issue #7, codecs not reset to NULL
+    Only do the restart on decoding error if the position is 0 (window size issue)
+    Allow one decoding error restart
+    Fix error when shifting protocol from mms to mmsh
+    Updated Turkish translation
+1.0.6b1
+    Track gtk2 and gtk3 in gmtk.pc file
+    Enhance subtitle visibility tracking
+    Handle the keyboard masks more correctly
+    Only allocate a size for the child window if the parent widget is realized
+    Fix volume tracking on default device, even when the device changes
+    Switch "PulseAudio" from a softvol to a real PulseAudio control (still can be forced to softvol if needed)
+        This allows for better volume control that is synced with the system volume and the default output device
+        This should be the default setting on machines with PulseAudio
+    Add -zoom to mplayer when vo is x11
+    Updated German translation
+    Change po file install location
+    Do PKG_CHECK for GTK3 when --enable-gtk=yes is specified
+    Use the localedir variable in the Makefile may fix Wolfgang's issue
+    Add gmlib to the list of referenced libaries Issue #3
+    Add pulse cflags and libs to libgmtk Issue #2
+    Detect if libm should be used and use if needed Issue #1
+    Add files to SVN as recommended by autoreconf -fiv
+1.0.5
+    Try to prevent mplayer from going into infinite loop on corrupt qt files
+    Fix missing type includes
+    Fix missing install file
+    Fix compilation on RHEL 5.7, due to older GLIB2
+1.0.5b2
+    Fix seeking in the media_tracker when the mouse button is released
+    Activate the external subtitle file, when we load one
+    Translated the missing string into Polish
+    Add hot key D to toggle deinterlacing
+    Updated German translation
+    Translated the "No Data" string into Polish
+    Use the proper domain when requesting a translated string, by default the lib was using the gnome-mplayer domain
+        rather than the gmtk domain, so strings were being read from the wrong set of files
+    Made the string "No Data" translatable, updated po files
+    Updated Japanese translation
+    Fix another potential segfault in gmtk_media_player when defining a specific font
+    When passing in 1.0 to ATTRIBUTE_SPEED_MULTIPLIER, reset the speed to normal
+    Added double attribute set for ATTRIBUTE_SPEED_SET
+    Fix potential segfault in gmtk_media_player when defining a specific font
+1.0.5b1
+    Change COPYING to contain correct license file GPL v2 instead of GPL v3 (code was never v3)
+    Updated Polish translation
+    Fix problem with seeking in the tracker
+    When mplayer reports that it has video, resize the media window so that mplayer has something to draw to
+	Fix issue with not being able to play media off an SFTP file share
+    Fix Issue #560, ATTRIBUTE_FORCE_CACHE not being processed
+    Bump version to 1.0.5b1
+    Add in gmtk_version method
+    Switch from AM_MAINTAINER_MODE to AM_MAINTAINER_MODE([enable]) in configure.ac
+    Wait for the socket_id to be valid, but in plugin mode it may not so timeout
+    Convert ignored key code to descriptive name
+    Have CD Audio use the cache
+    Added recommended options from Issue #549
+    Update po files
+    Update French translation
+    Fix Issue #546 so that it only trys again when XVMC is the selected VO
+    Disable XVMC fallback as it does not work in all cases, fixes Issue #546
+    Capture keys x/z to alter subtitle delay
+    Remove runtime warning when player->vo = NULL
+    Add preferred audio and subtitle language attributes
+    Detect win32 in configure
+    Add g_strv_new to gm_strfuncs
+    Copy gmtk_common.h to includes
+    Cleaned up tabs from RPM spec.in
+    Cleaned up the RPM spec.in
+    Updated Portuguese translation, and others
+    Clean up some compiler warnings when building the rpm
+    Add translations to the spec file
+    Import translations from gnome-mplayer
+    Fix some problems with initial audio language selection when using mplayer2
+    Have mplayer use gl_nosw when hardware codecs are enabled, when vo is gl or gl2
+    Fix feature enabling in gm_pref_store, it was always defaulting to the keystore
+    Add in better support for hardware codecs based on comments from Uoti
+    Add in .spec.in file to allow proper RPM package creation
+    Need to start doing po translations, I'll see what I can steal from the other components
+    Bump version to 1.0.4
+    Cleanup some cache files, fix gtk3 check error on installs without gtk3
+    Add configure flags --enable-keystore, --enable-gsettings, --enable-gconf to make prefstore backend selectable
+    Have configure autodetect gtk3
+    Apply patch from gnome-mplayer changes (SVN r2152 - r2148)
+    Make code work
+    Initial import of code
+
